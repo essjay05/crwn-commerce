@@ -1,3 +1,5 @@
+import './categories.styles.scss'
+
 const categories = [
   {
     id: 1,
@@ -30,8 +32,11 @@ const App = () => {
 
   const renderCategoryCards = (cats) => {
     return cats.map( ({id, title, subtitle}) => <div className="card-container" key={id}>
-    <h1>{title}</h1>
-    <p>{subtitle}</p>
+    <div className="category-bg-img"></div>
+    <div className="category-body-container">
+      <h1>{title}</h1>
+      <p>{subtitle}</p>
+    </div>
   </div>)
   }
 
