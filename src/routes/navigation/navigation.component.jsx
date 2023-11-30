@@ -1,5 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom'
 
+import { ReactComponent as CrwnLogo } from '../../assets/crown.svg'
+
 import './navigation.styles.scss'
 
 const Navigation = () => {
@@ -7,7 +9,7 @@ const Navigation = () => {
     <>
       <header className="header-nav-container">
         <NavLink className="logo-container" to="/">
-          <h1 className="logo">CRWN</h1>
+          <CrwnLogo className="logo" aria-label="CRWN Apparel logo"/>
         </NavLink>
         <nav className="nav-links-container">
           <ul className="nav-links-list">
