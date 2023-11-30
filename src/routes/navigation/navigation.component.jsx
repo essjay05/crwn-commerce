@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom'
 
 import './navigation.styles.scss'
 
@@ -6,14 +6,14 @@ const Navigation = () => {
   return (
     <>
       <header className="header-nav-container">
-        <h1 className="logo">
-          <a className="logo-link" href="/">CRWN</a>
-        </h1>
+        <NavLink className="logo-container" to="/">
+          <h1 className="logo">CRWN</h1>
+        </NavLink>
         <nav className="nav-links-container">
           <ul className="nav-links-list">
-            <li className="nav-link-item"><a className="nav-link" href="/">Home</a></li>
-            <li className="nav-link-item"><a className="nav-link" href="/shop">Shop</a></li>
-            {/* <li className="nav-link-item"><a className="nav-link" href="/cart">Cart</a></li> */}
+            <li className="nav-link-item"><NavLink className="nav-link" to="/">Home</NavLink></li>
+            <li className="nav-link-item"><NavLink className="nav-link" to="/shop">Shop</NavLink></li>
+            {/* <li className="nav-link-item"><NavLink className="nav-link" to="/cart">Cart</NavLink></li> */}
           </ul>
         </nav>
       </header>

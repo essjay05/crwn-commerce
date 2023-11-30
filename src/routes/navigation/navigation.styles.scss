@@ -9,11 +9,11 @@
   padding: 12px 24px;
 }
 
-.logo {
-  color: teal;
+.logo-container {
+  text-decoration: none;
 
-  & .logo-link {
-    text-decoration: none;
+  & .logo {
+    color: teal;
   }
 }
 
