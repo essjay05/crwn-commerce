@@ -30,11 +30,7 @@ const Home = () => {
     }
   ]
 
-  return (
-    <section className="App">
-      <Directory categories={categories}/>
-    </section>
-  );
+  return <Directory categories={categories}/>
 }
 
 export default Home;
