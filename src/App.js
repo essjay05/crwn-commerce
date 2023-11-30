@@ -32,7 +32,7 @@ const App = () => {
 
   const renderCategoryCards = (cats) => {
     return cats.map( ({id, title, subtitle}) => <div className="card-container" key={id}>
-    <div className="category-bg-img"></div>
+    <div className="card-bg-img"></div>
     <div className="category-body-container">
       <h1>{title}</h1>
       <p>{subtitle}</p>
